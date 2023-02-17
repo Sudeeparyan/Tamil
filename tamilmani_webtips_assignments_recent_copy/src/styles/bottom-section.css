@@ -1,0 +1,87 @@
+@import "reset.css"; 
+
+.bottom-container-header{ 
+    margin-top:70px;
+    display:grid; 
+    grid-template-columns:2fr 160px 160px; 
+    align-items: stretch; 
+    margin-left: 70px;
+    margin-right: 70px;
+} 
+
+.bottom-header-title{
+    font-size:22px; 
+    color:white;
+}
+.bottom-container-header img{
+    width:20px;
+    height:auto;
+} 
+.bottom-header-continent{
+    text-align:right; 
+    color:white;
+}
+.bottom-header-temperature{
+    text-align:right; 
+    color:white;
+} 
+.heading{
+    text-align:center; 
+    margin-left:170px;
+}
+
+@media screen and (max-width:850px){
+    .bottom-container{ 
+        margin-top:25px;
+        margin-bottom:50px;
+        display:grid; 
+        grid-template-columns:repeat(12, minmax(150px,1fr)); 
+        column-gap: 30px;
+        row-gap: 30px;
+        margin-left:70px; 
+        margin-right:70px;
+    }
+}
+.bottom-container{ 
+    margin-top:25px;
+    margin-bottom:50px;
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap:30px; 
+    margin-left:70px; 
+    margin-right:70px;
+}
+
+.bottom-child{ 
+    padding:10px;
+    display:grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows:1fr 1fr;
+    background-color:rgba(46, 46, 46, 1);
+    align-items: stretch;
+    transition: all .2s ease-in-out;
+    
+} 
+.bottom-child:hover{
+    transform:scale(1.08);
+}
+.bottom-child-content-cont{
+   text-align: left;
+   color:goldenrod;
+} 
+.bottom-child-content-temp{
+    text-align: right;
+    font-weight: bolder; 
+    font-size: large;
+    color:white;
+}
+.bottom-child-content-state{
+    text-align: left; 
+    color:white;
+}
+.bottom-child-content-icon{ 
+    color:white;
+    text-align: right;
+}

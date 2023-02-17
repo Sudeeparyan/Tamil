@@ -1,0 +1,146 @@
+@import "reset.css"; 
+
+.main-container{ 
+    display:grid;
+    margin-top:50px;
+    font-family: 'Poppins', sans-serif;
+    background-color:rgba(18, 18, 18, 1);
+    border-top-left-radius:40px;
+    border-top-right-radius:40px; 
+}
+.middle-container{ 
+    width:100%;
+    padding-top: 20px;
+    color: white;  
+    overflow:hidden; 
+    text-align: end; 
+
+    
+} 
+@media screen and (max-width:850px){
+    .middle-container{ 
+        padding-top: 20px;
+        color: white;  
+        overflow:hidden; 
+        margin-left:10px; 
+        margin-right:10px; 
+    }
+}
+.selector{ 
+    margin-left:80px;
+    margin-right:80px;
+    display:grid;  
+    grid-template-columns: 1fr 50px 50px 50px 150px;  
+    
+}
+.selector h4{
+    color:white;
+    text-align: center; 
+    margin-left:120px;
+} 
+.number-dropdown input{ 
+    width:30px;
+    background-color: rgba(24, 24, 24, 1);
+    color:white;
+}
+
+.carosel{    
+    margin-top: 25px;
+    display:flex;   
+    column-gap:5%;
+    justify-content: space-between;
+    transition: all .2s ease-in-out; 
+    grid-auto-flow: column; 
+    overflow-x:scroll;
+    overflow-y:hidden; 
+    margin-left:40px; 
+    margin-right:40px;
+} 
+@media screen and (max-width:850px){ 
+    .carosel{    
+        margin-top: 25px;
+        display:flex;   
+        column-gap:5%; 
+        row-gap:5%;
+        justify-content: space-between;
+        transition: all .2s ease-in-out; 
+        grid-auto-flow: column; 
+        overflow-x:scroll;
+        overflow-y:hidden; 
+        margin-left:40px;
+        margin-right:40px;
+    } 
+    
+}
+.carosel-item:hover{
+    transform:scale(1.08);
+}
+.carosel-item{
+    transition: all .2s ease-in-out;
+    min-width: 270px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media  screen and (max-width:850px) {
+    .carosel-item{
+        transition: all .2s ease-in-out;
+        align-self:center; 
+    }
+}
+.carosel-content{
+    display:grid; 
+    margin:10px;
+    grid-template-rows: 30px 30px 30px 30px; 
+    text-align: left;
+
+}   
+
+.carosel-content-child{
+    display:grid; 
+    position: relative;
+    grid-template-columns:100px 1fr; 
+    justify-content: stretch;
+}
+.carosel-content-child .place{
+    align-self:center;
+} 
+.carosel-content-child .place-weather{ 
+    text-align: right;
+    align-self:center;
+    font-size:20px; 
+    font-weight: bold; 
+    position: absolute; 
+    right:0;
+    top:0;
+}
+.carosel-content-child img{
+    width:20px;
+    height:auto;
+    align-self: top;
+}
+.carosel-content-child div{ 
+    margin:0 auto;
+}
+.carosel-content-child2{
+    display:grid;
+    grid-template-columns:28px 50px;   
+}
+.carosel-content-child2 div{
+    align-self: center;
+}
+
+.carosel-content-child .place-weather { 
+    text-align:right;
+}
+.carosel-item{
+    background-image: url('../../assets/city-icons/anadyr.svg');
+    background-repeat: no-repeat; 
+    background-position: right bottom; 
+    background-color: rgb(26, 26, 26); 
+    background-size:170px auto; 
+    height:280px;
+    width:280px; 
+
+}
+
+
